@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!-- procetural glance -->
+
+    <model>
+        <name>nav-light-right-p</name>
+        <path>nav-light-right-p.xml</path>
+        <offsets>
+            <x-m> 4.500</x-m>
+            <y-m> 9.850</y-m>
+            <z-m>-0.640</z-m>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>dist-scale</type>
+        <object-name>nav-light-right-p</object-name>
+        <factor>0.005</factor>
+        <min>1.0</min>
+        <max>10.0</max>
+        <center>
+            <x-m> 4.500</x-m>
+            <y-m> 9.850</y-m>
+            <z-m>-0.640</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>nav-light-right-p</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[6]</property>
+        </condition>
+    </animation>
+
+<!-- Compositor light -->
+
+    <light>
+        <name>nav-light-right-c</name>
+        <type>spot</type>
+        <position>
+            <x-m> 4.500</x-m>
+            <y-m> 9.850</y-m>
+            <z-m>-0.640</z-m>
+        </position>
+        <direction>
+            <x>-0.573576</x>
+            <y> 0.819152</y>
+            <z> 0.0</z>
+        </direction>
+        <ambient>
+            <r>0.4</r>
+            <g>1.0</g>
+            <b>0.4</b>
+            <a>0.0</a>
+        </ambient>
+        <diffuse>
+            <r>0.4</r>
+            <g>1.0</g>
+            <b>0.4</b>
+            <a>0.0</a>
+        </diffuse>
+        <specular>
+            <r>0.4</r>
+            <g>1.0</g>
+            <b>0.4</b>
+            <a>0.0</a>
+        </specular>
+        <!--dim-factor>
+            <property>sim/multiplay/generic/float[3]</property>
+        </dim-factor-->
+        <attenuation>
+            <c>1.0</c>
+            <l>0.225</l>
+            <q>0.1875</q>
+        </attenuation>
+        <spot-cutoff>75</spot-cutoff>
+        <spot-exponent>3</spot-exponent>
+        <range-m>20</range-m>
+    </light>
+
+    <animation>
+        <type>select</type>
+        <object-name>nav-light-right-c</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[6]</property>
+        </condition>
+    </animation>
+
+</PropertyList>

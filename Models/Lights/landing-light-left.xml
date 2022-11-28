@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!-- procetural glance -->
+
+    <model>
+        <name>landing-light-left-p</name>
+        <path>landing-light-left-p.xml</path>
+        <offsets>
+            <x-m>-3.300</x-m>
+            <y-m>-1.135</y-m>
+            <z-m>-0.925</z-m>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>dist-scale</type>
+        <object-name>landing-light-left-p</object-name>
+        <factor>0.005</factor>
+        <min>2.0</min>
+        <max>10.0</max>
+        <center>
+            <x-m>-3.300</x-m>
+            <y-m>-1.135</y-m>
+            <z-m>-0.925</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>landing-light-left-p</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[3]</property>
+        </condition>
+    </animation>
+
+<!-- Compositor light -->
+
+    <light>
+        <name>landing-light-left-c</name>
+        <type>spot</type>
+        <position>
+            <x-m>-3.300</x-m>
+            <y-m>-1.135</y-m>
+            <z-m>-0.925</z-m>
+        </position>
+        <direction>
+            <x>-0.969846310393</x>
+            <y>-0.171010071663</y>
+            <z>-0.093648177667</z>
+<!--
+            <x>-0.996194698092</x>
+            <y> 0.00</y>
+            <z>-0.0871557427477</z>
+-->
+        </direction>
+        <ambient>
+            <r>1.00</r>
+            <g>0.95</g>
+            <b>0.95</b>
+            <a>0</a>
+        </ambient>
+        <diffuse>
+            <r>1.00</r>
+            <g>0.95</g>
+            <b>0.95</b>
+            <a>0</a>
+        </diffuse>
+        <specular>
+            <r>1.00</r>
+            <g>0.95</g>
+            <b>0.95</b>
+            <a>0</a>
+        </specular>
+        <!--dim-factor>
+            <property>sim/multiplay/generic/float[4]</property>
+        </dim-factor-->
+        <attenuation>
+            <c>1.0</c>
+            <l>0.0225</l>
+            <q>0.000001875</q>
+        </attenuation>
+        <spot-cutoff>30</spot-cutoff>
+        <spot-exponent>40</spot-exponent>
+        <range-m>500</range-m>
+    </light>
+
+    <animation>
+        <type>select</type>
+        <object-name>landing-light-left-c</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[3]</property>
+        </condition>
+    </animation>
+
+</PropertyList>
