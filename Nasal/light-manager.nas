@@ -238,7 +238,7 @@ var light_manager = {
     }
 
         # light 3 position
-    if(getprop("controls/lighting/taxi-lights")) {
+    if(getprop("controls/lighting/taxi-light")) {
         var new3_xpos = me.light3_xpos * lightscale;
         var new3_ypos = me.light3_ypos * lightscale;
         var new3_size = me.light3_size * lightscale;
@@ -333,7 +333,7 @@ setlistener("/controls/lighting/landing-light[1]", func(bp1){
 },0,0);
 
 # SurferTim added
-setlistener("/controls/lighting/taxi-lights", func(bp2){
+setlistener("/controls/lighting/taxi-light", func(bp2){
     if(bp2.getBoolValue()){
 	light_manager.enable_or_disable(1,2);
     }else{

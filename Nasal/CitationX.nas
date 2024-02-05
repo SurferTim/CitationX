@@ -168,6 +168,9 @@ var fdm_init = func(){
     setprop("controls/engines/N1-limit",95.0);
     setprop("controls/lighting/beacon",0);
     setprop("controls/lighting/nav-lights",0);
+    setprop("controls/lighting/taxi-light",0);
+    setprop("controls/lighting/landing-light",0);
+    setprop("controls/lighting/landing-light[1]",0);
 }
 
 setlistener("/sim/signals/fdm-initialized", func {
@@ -280,6 +283,16 @@ controls.gearDown = func(v) {
       setprop("/controls/gear/gear-down", 1);
     }
 }
+
+controls.taxilight = func (v) {
+    setprop("/controls/lighting/taxi-light",v);
+};
+
+controls.landinglight = func (v) {
+    setprop("/controls/lighting/landing-light",v);
+    setprop("/controls/lighting/landing-light[1]",v);
+
+};
 
 controls.toggleLandingLights = func()
 {

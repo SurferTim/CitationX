@@ -186,7 +186,7 @@ var init_switches = func{
     append(lights_input,props.globals.initNode("controls/lighting/logo-lights",0,"BOOL"));
     append(lights_output,props.globals.initNode("systems/electrical/outputs/logo-lights",0,"DOUBLE"));
     append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/taxi-lights",0,"BOOL"));
+    append(lights_input,props.globals.initNode("controls/lighting/taxi-light",0,"BOOL"));
     append(lights_output,props.globals.initNode("systems/electrical/outputs/taxi-lights",0,"DOUBLE"));
     append(lights_load,1);
     append(lights_input,props.globals.initNode("controls/lighting/beacon-state/state",0,"BOOL"));

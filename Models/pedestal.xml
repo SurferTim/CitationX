@@ -118,7 +118,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Taxi.switch</object-name>
-        <property>controls/lighting/taxi-lights</property>
+        <property>controls/lighting/taxi-light</property>
         <factor>30</factor>
         <center>
             <x-m>0.532</x-m>
@@ -244,7 +244,7 @@
         <repeatable>false</repeatable>
         <binding>
             <command>property-toggle</command>
-            <property>controls/lighting/taxi-lights</property>
+            <property>controls/lighting/taxi-light</property>
         </binding>
         <binding>
             <command>property-toggle</command>

@@ -225,6 +225,26 @@
                 <min>0.00</min>
             </binding>
         </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[0]/volume</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[0]/volume</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
     </animation>
 
 
@@ -269,6 +289,26 @@
         </action>
         <action>
             <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[1]/volume</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[1]/volume</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
@@ -328,6 +368,26 @@
                 <min>0.00</min>
             </binding>
         </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/volume</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/volume</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
     </animation>
 
     <animation>
@@ -371,6 +431,26 @@
         </action>
         <action>
             <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/nav[1]/volume</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/nav[1]/volume</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
@@ -430,6 +510,26 @@
                 <min>0.00</min>
             </binding>
         </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf[0]/volume-norm</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf[0]/volume-norm</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
     </animation>
 
     <animation>
@@ -473,6 +573,26 @@
         </action>
         <action>
             <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf[1]/volume-norm</property>
+                <step>-0.10</step>
+                <min>0.00</min>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf[1]/volume-norm</property>
+                <step>0.10</step>
+                <max>1.00</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
