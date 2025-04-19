@@ -564,6 +564,21 @@ Started Oct 2005  Syd Adams
 </primus2000>
 
     <cdu n="0">
+		  <input type="string"/>
+      <serviceable type="bool">1</serviceable>
+      <ident>
+        <model>Citation X</model>
+      </ident>
+    </cdu>
+    <cdu n="1">
+		  <input type="string"/>
+      <serviceable type="bool">1</serviceable>
+      <ident>
+        <model>Citation X</model>
+      </ident>
+    </cdu>
+
+    <!--cdu n="0">
         <page type="string">PROGRESS</page>
         <L type="string" n="0"></L>
         <L type="string" n="1"></L>
@@ -597,7 +612,7 @@ Started Oct 2005  Syd Adams
         <R type="string" n="5"></R>
         <S type="string" n="0"></S>
         <S type="string" n="1"></S>
-     </cdu>
+     </cdu-->
 
         <transponder>
             <inputs>
@@ -751,6 +766,14 @@ Started Oct 2005  Syd Adams
             <!--file>Aircraft/CitationX/Nasal/light-manager.nas</file-->
             <file>Aircraft/Generic/limits.nas</file>
         </citation>
+
+        <!--cdu>
+            <file>Aircraft/CitationX/Nasal/cdu.nas</file>
+            <file>Aircraft/CitationX/Nasal/cdu-pages.nas</file>
+            <file>Aircraft/CitationX/Nasal/holding-pattern.nas</file>
+            <file>Aircraft/CitationX/Nasal/procedure-turn.nas</file>
+        </cdu-->
+
         <dialogs>
             <file>Aircraft/CitationX/Nasal/dialogs.nas</file>
         </dialogs>

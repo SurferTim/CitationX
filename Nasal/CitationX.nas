@@ -148,6 +148,32 @@ props.globals.initNode("autopilot/internal/pitch-filter-start",0.0,"DOUBLE");
 props.globals.initNode("engines/engine[0]/itt-c",0.0,"DOUBLE");
 props.globals.initNode("engines/engine[1]/itt-c",0.0,"DOUBLE");
 
+### Cdu ###
+for(var n=0;n<2;n+=1) {
+  props.globals.initNode("instrumentation/cdu["~n~"]/init",0,"BOOL");
+  props.globals.initNode("instrumentation/cdu["~n~"]/pos-init",0,"BOOL");
+  props.globals.initNode("instrumentation/cdu["~n~"]/direct",0,"BOOL");
+  props.globals.initNode("instrumentation/cdu["~n~"]/direct-to",-1,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/nbpage",1,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/alarms",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/fltplan",0,"BOOL");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/perf-confirm",0,"BOOL");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/trans-alt",18000,"DOUBLE");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/hold/active",0,"BOOL");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/hold/clear",0,"BOOL");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/hold/inbound",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/hold/speed",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/hold/wpt",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/flyover",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/active",0,"BOOL");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/turn","L","STRING");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/inbound",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/speed",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/wpt",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/clear",0,"INT");
+  props.globals.initNode("/instrumentation/cdu["~n~"]/pcdr/angle",45,"INT");
+}
+
 var Annun = props.globals.getNode("instrumentation/annunciators",1);
 var MstrWarn =Annun.getNode("master-warning",1);
 var MstrCaution = Annun.getNode("master-caution",1);

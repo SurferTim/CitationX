@@ -6,7 +6,7 @@
 
     <engine>
         <name>left engine int run</name>
-        <path>Aircraft/CitationX/Sounds/eng-int.wav</path>
+        <path>Aircraft/CitationX/Sounds/eng-int2.wav</path>
         <condition>
             <and>
                 <property>sim/current-view/internal</property>
@@ -19,13 +19,21 @@
         </condition>
         <mode>looped</mode>
         <volume>
-            <property>engines/engine[0]/fan</property>
-            <factor>0.1</factor>
+            <expression>
+                <product>
+                    <property>engines/engine[0]/fan</property>
+                    <div>
+                        <property>environment/pressure-inhg</property>
+                        <value>29.92</value>
+                    </div>
+                </product>
+            </expression>
+            <factor>0.01</factor>
         </volume>
         <pitch>
             <property>engines/engine[0]/fan</property>
             <offset>0</offset>
-            <factor>0.01</factor>
+            <factor>0.013</factor>
         </pitch>
         <position>
             <x>3</x>
@@ -90,7 +98,7 @@
         <mode>looped</mode>
         <volume>
             <property>engines/engine[0]/fan</property>
-            <factor>0.02</factor>
+            <factor>0.04</factor>
         </volume>
         <pitch>
             <property>engines/engine[0]/fan</property>
@@ -109,7 +117,7 @@
 
     <engine>
         <name>right engine int run</name>
-        <path>Aircraft/CitationX/Sounds/eng-int.wav</path>
+        <path>Aircraft/CitationX/Sounds/eng-int2.wav</path>
         <condition>
             <and>
                 <property>sim/current-view/internal</property>
@@ -122,13 +130,21 @@
         </condition>
         <mode>looped</mode>
         <volume>
-            <property>engines/engine[1]/fan</property>
-            <factor>0.1</factor>
+            <expression>
+                <product>
+                    <property>engines/engine[1]/fan</property>
+                    <div>
+                        <property>environment/pressure-inhg</property>
+                        <value>29.92</value>
+                    </div>     
+                </product>
+            </expression>
+            <factor>0.01</factor>
         </volume>
         <pitch>
             <property>engines/engine[1]/fan</property>
             <offset>0</offset>
-            <factor>0.01</factor>
+            <factor>0.013</factor>
         </pitch>
         <position>
             <x>3</x>
@@ -194,7 +210,7 @@
         <mode>looped</mode>
         <volume>
             <property>engines/engine[1]/fan</property>
-            <factor>0.02</factor>
+            <factor>0.04</factor>
         </volume>
         <pitch>
             <property>engines/engine[1]/fan</property>
